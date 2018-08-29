@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIT5032_Project_EatSmart", "FIT5032_Project_EatSmart\FIT5032_Project_EatSmart.csproj", "{F7D8A10E-BD5A-4CB4-BB5F-C5F2606DB77B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIT5032_Project_EatSmart.Tests", "FIT5032_Project_EatSmart.Tests\FIT5032_Project_EatSmart.Tests.csproj", "{E5CFE6A0-4AD2-45A3-8879-5269E0F896EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7D8A10E-BD5A-4CB4-BB5F-C5F2606DB77B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D8A10E-BD5A-4CB4-BB5F-C5F2606DB77B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D8A10E-BD5A-4CB4-BB5F-C5F2606DB77B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D8A10E-BD5A-4CB4-BB5F-C5F2606DB77B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5CFE6A0-4AD2-45A3-8879-5269E0F896EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5CFE6A0-4AD2-45A3-8879-5269E0F896EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5CFE6A0-4AD2-45A3-8879-5269E0F896EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5CFE6A0-4AD2-45A3-8879-5269E0F896EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E932DF6-E0E3-4375-8342-E402DE97119F}
+	EndGlobalSection
+EndGlobal
