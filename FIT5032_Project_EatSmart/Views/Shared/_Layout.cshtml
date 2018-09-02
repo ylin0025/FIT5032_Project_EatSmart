@@ -9,9 +9,13 @@
     <title>@ViewBag.Title - Eat Smart</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </head>
 <body>
     <!-- Navigation -->
+    <br />
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -23,33 +27,30 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" @Html.ActionLink("About", "Index", "Home")</a>
+                        @Html.ActionLink("Food Nutrition", "Nutrition", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" @Html.ActionLink("Food Nutrition", "About", "Home")</a>
+                        @Html.ActionLink("Nutrition Calculator", "NutritionCalculator", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" @Html.ActionLink("Nutrition Calculator", "Contact", "Home")</a>
+                        @Html.ActionLink("Forum", "Forum", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" @Html.ActionLink("Forum", "Contact", "Home")</a>
+                        @Html.ActionLink("My Food Diary", "Diary", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" @Html.ActionLink("Contact", "Contact", "Home")</a>
+                        @Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" @Html.ActionLink("My Food Diary", "Contact", "Home")</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" @Html.ActionLink("Administrator", "Contact", "Home")</a>
+                        @Html.ActionLink("Food Nutrition", "Nutrition", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Login
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLog">
-                            <a class="dropdown-item" @Html.ActionLink("Contact", "Contact", "Home")</a>
-                            <a class="dropdown-item" @Html.ActionLink("About", "About", "Home")</a>
+                            @Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "dropdown-item" })
+                            @Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "dropdown-item" })
                         </div>
                     </li>
                 </ul>
@@ -58,7 +59,6 @@
     </nav>
     <div class="container body-content">
         @RenderBody()
-        <hr />
 
     </div>
 
@@ -69,9 +69,7 @@
         </div>
     </footer>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+
 </body>
 </html>
 
