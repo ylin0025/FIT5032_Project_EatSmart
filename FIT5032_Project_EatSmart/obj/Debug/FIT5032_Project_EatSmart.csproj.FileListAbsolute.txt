@@ -123,3 +123,4 @@ C:\Users\Yan-Yi Lin\Documents\FIT5032_Project_EatSmart\FIT5032_Project_EatSmart\
 C:\Users\Yan-Yi Lin\Documents\FIT5032_Project_EatSmart\FIT5032_Project_EatSmart\obj\Debug\FIT5032_Project_EatSmart.csproj.CopyComplete
 C:\Users\Yan-Yi Lin\Documents\FIT5032_Project_EatSmart\FIT5032_Project_EatSmart\obj\Debug\FIT5032_Project_EatSmart.dll
 C:\Users\Yan-Yi Lin\Documents\FIT5032_Project_EatSmart\FIT5032_Project_EatSmart\obj\Debug\FIT5032_Project_EatSmart.pdb
+C:\Users\Yan-Yi Lin\Documents\FIT5032_Project_EatSmart\FIT5032_Project_EatSmart\obj\Debug\FIT5032_Project_EatSmart.csprojAssemblyReference.cache
