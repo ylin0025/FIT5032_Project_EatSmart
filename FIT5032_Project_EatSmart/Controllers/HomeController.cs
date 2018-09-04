@@ -13,13 +13,6 @@ namespace FIT5032_Project_EatSmart.Controllers
             return View();
         }
 
-        public ActionResult Diary()
-        {
-            ViewBag.Message = "Your diary page.";
-
-            return View();
-        }
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
@@ -27,25 +20,5 @@ namespace FIT5032_Project_EatSmart.Controllers
             return View();
         }
 
-        public ActionResult Forum()
-        {
-            ViewBag.Message = "Your forum page.";
-
-            return View();
-        }
-
-        public ActionResult Nutrition()
-        {
-            ViewBag.Message = "Your nutrition page.";
-
-            return View();
-        }
-
-        public ActionResult NutritionCalculator()
-        {
-            ViewBag.Message = "Your calculator page.";
-
-            return View();
-        }
     }
 }
