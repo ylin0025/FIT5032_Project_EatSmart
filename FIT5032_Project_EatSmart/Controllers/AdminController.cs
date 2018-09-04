@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace FIT5032_Project_EatSmart.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         public ActionResult Index()
