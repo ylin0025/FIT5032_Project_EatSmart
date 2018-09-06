@@ -1,0 +1,100 @@
+﻿@model IEnumerable<FIT5032_Project_EatSmart.Models.FoodNutrition>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <thead>
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FoodName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Energy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Protein)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalFat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Carbohydrates)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalSugars)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calcium)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sodium)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SaturatedFat)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FoodName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Energy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Protein)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalFat)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Carbohydrates)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalSugars)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Calcium)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sodium)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SaturatedFat)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/DataTables/jquery.dataTables.js")
+    @Scripts.Render("~/Scripts/DataTables/dataTables.bootstrap.js")
+    <script>
+$(document).ready(function () {
+$('.table').DataTable();
+});
+    </script>
+}
+<link href="~/Content/DataTables/css/dataTables.bootstrap.min.css"
+      rel="stylesheet" />
+

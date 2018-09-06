@@ -29,5 +29,7 @@ namespace FIT5032_Project_EatSmart.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<FIT5032_Project_EatSmart.Models.FoodNutrition> FoodNutritions { get; set; }
     }
 }
