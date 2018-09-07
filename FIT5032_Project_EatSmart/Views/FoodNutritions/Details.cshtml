@@ -1,0 +1,91 @@
+﻿@model FIT5032_Project_EatSmart.Models.FoodNutrition
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FoodNutrition</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoodName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Energy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Energy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Protein)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Protein)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalFat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalFat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Carbohydrates)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Carbohydrates)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalSugars)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalSugars)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Calcium)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Calcium)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sodium)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sodium)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SaturatedFat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SaturatedFat)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
