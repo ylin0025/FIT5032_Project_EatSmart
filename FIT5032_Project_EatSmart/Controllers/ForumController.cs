@@ -6,7 +6,6 @@ using System.Web.Mvc;
 
 namespace FIT5032_Project_EatSmart.Controllers
 {
-    [Authorize]
     public class ForumController : Controller
     {
         public ActionResult Index()
